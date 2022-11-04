@@ -1,0 +1,91 @@
+site_name: ac-embarcados
+site_author: Arnaldo Viana
+repo_url: https://github.com/arnaldojr/ac-embarcados/
+repo_name: "ac-embarcados"
+site_url: https://arnaldojr.github.io/ac-embarcados/ 
+copyright: 'Copyright &copy; Arnaldo Viana @ INSPER'
+
+extra:
+    materia: ac-embarcados
+    professor: Arnaldo Viana
+    ano: 2022
+
+theme:
+  name: active-handout
+  #custom_dir: overrides
+  features:
+    - content.code.annotate
+
+docs_dir: material
+site_dir: docs
+
+# Extensions / plugins
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.0.0/js-yaml.min.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/gh/insper-education/active-handout-plugins-js@main/package/plugin-bundle.js
+
+extra:
+  ihandout_config:
+#    counter:
+#      - question
+#      - tip
+#      - exercise
+#      - example
+    report:
+      api-base: https://devlife.insper-comp.com.br/api/offerings/1/
+      url: https://devlife.insper-comp.com.br/api/offerings/1/exercises/
+
+# Extensions / plugins
+plugins:
+  - git-revision-date-localized
+  - search
+  - mkdocs-jupyter:
+      execute: False
+
+markdown_extensions:
+  - markdown.extensions.tables
+  - tables
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.snippets:
+      base_path: code
+      check_paths: true
+
+
+nav:
+  - Home: index.md
+  - Agenda: programacao/agenda.md
+  - Laboratórios:  
+    - Aula1: aulas/lab1/index.md
+    - Aula2: aulas/lab2/index.md       
+  - Dicas: 
+    - Dicas de projetos: aulas/Dicas/dicas-projetos.md
