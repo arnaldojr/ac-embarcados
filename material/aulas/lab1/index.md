@@ -161,6 +161,20 @@ A configuração de rede do Wi-fi é feita através da configuração do arquivo
 > Esta configuração é a mais indicada e segura para ser usada em aula, para isso rotei a internet de seu celular.
 
 
+!!! info
+    Dica para facilitar a conexão, utilize o seu notebook como ``Hotspot móvel`` desta forma fica tudo mais simples para se conectar. 
+    Para isso, faça a seguinte configuração:
+    
+        - Selecione o botão ``Iniciar``  e ``Configurações > Rede e Internet > Hotspot móvel``.
+        - Em ``Compartilhar minha conexão de Internet`` de, escolha a conexão de Internet que você deseja compartilhar.
+        - Selecione ``Editar`` > insira o nome e a senha de uma rede nova > ``Salvar``.
+        - Ative ``Compartilhar minha conexão de Internet com outros dispositivos``.
+        - Para se conectar no outro dispositivo, vá para as configurações de Wi-Fi no dispositivo, localize o nome da rede, selecione-o, insira a senha e conecte-se.
+    
+    fonte: [microsoft](https://support.microsoft.com/pt-br/windows/usar-seu-computador-windows-como-um-hotspot-m%C3%B3vel-c89b0fad-72d5-41e8-f7ea-406ad9036b85)
+
+
+
 * Personal: (RECOMENDADO) - Use o roteador da sua casa ou habilite seu Celular como Roteador 
 
     ```shell
@@ -202,6 +216,9 @@ A configuração de rede do Wi-fi é feita através da configuração do arquivo
     
     ```
 
+
+
+
 Configuração finalizada! Agora vamos ligar! Mas antess......
 
 !!! progress
@@ -209,7 +226,9 @@ Configuração finalizada! Agora vamos ligar! Mas antess......
 
 #### Boot Raspberry PI
 
-Para ter acesso SSH ao raspberry PI vamos utilizar o o software ``PuTTy``, ou qualquer outro que abre conexão SSH.
+Para ter acesso SSH ao raspberry PI vou mostras 2 modos: 
+
+1. vamos utilizar o software ``PuTTy``, ou qualquer outro que abre conexão SSH.
 
 > Para facilitar, o link para [download do PuTY https://www.putty.org/](https://www.putty.org/)
 
@@ -222,6 +241,16 @@ Agora com tudo configurado e instalado chegou a hora de ligar e testar.
 ![rede](rede.png)
 
 
+2. Vamos utilizar o o software ``VScode``.
+
+> É bem tranquilo realizar essa conexão, existem muitos sites que ensinam a fazer. Para facilitar, da uma olhada nos links:
+
+    -  [https://code.visualstudio.com/docs/remote/ssh](https://code.visualstudio.com/docs/remote/ssh)  
+    -  [https://www.raspberrypi.com/news/coding-on-raspberry-pi-remotely-with-visual-studio-code/](https://www.raspberrypi.com/news/coding-on-raspberry-pi-remotely-with-visual-studio-code/)
+    -  [https://cloudbytes.dev/snippets/develop-remotely-on-raspberry-pi-using-vscode-remote-ssh](https://cloudbytes.dev/snippets/develop-remotely-on-raspberry-pi-using-vscode-remote-ssh)
+    
+
+
 !!! exercise
     Agora você deve:
 
@@ -230,7 +259,7 @@ Agora com tudo configurado e instalado chegou a hora de ligar e testar.
         - Conecte seu computador(notebook) na mesma rede Wifi configurada na Raspbeery Pi
         - Ligue a fonte de alimentação na raspberry pi
         - Aguarde alguns segundos e vefifique o ip que foi atribuido ao Raspberry PI
-        - No seu computador, abra o puTTY e digite o ip da Raspberry PI
+        - No seu computador, escolha o motodo de acesso SSH (putty ou vscode), digite o ip da Raspberry PI e senha.
         - Se tudo estiver correto, um terminal irá abrir e vai solicitar login e senha
 
 
