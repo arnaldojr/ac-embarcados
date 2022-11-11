@@ -111,6 +111,8 @@ A RPi.GPIO é uma biblioteca simples e vamos ver as principais funções atravé
 
 - ``GPIO.input()`` = Faz a leitura do estado do pino definido como entrada. Geralmente quando usamos um pino como entrada configuramos no setup o parametro pull_up_down (como exemplo: GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP))
 
+!!! info
+    O exercicio pode ser realizado utilizando o VScode, é uma interface uma pouco mais amigáve. Neste caso, não será necessário o editor nano. 
 
 !!! exercise
     Monte o circuito abaixo:
@@ -152,7 +154,7 @@ A RPi.GPIO é uma biblioteca simples e vamos ver as principais funções atravé
     # configura o pino fisico 11 como saida
     GPIO.setup(11, GPIO.OUT)
 
-    whille True:  
+    while True:  
         # escreve no pino 11 nivel logico alto
         GPIO.output(11, GPIO.HIGH)
         time.sleep(1) # delay de 1s
@@ -174,7 +176,7 @@ A RPi.GPIO é uma biblioteca simples e vamos ver as principais funções atravé
     # configura o GPIO17 como saida
     GPIO.setup(17, GPIO.OUT)
     
-    whille True:  
+    while True:  
         # escreve no GPIO17 nivel logico alto
         GPIO.output(17, GPIO.HIGH)
         time.sleep(1) # delay de 1s
@@ -196,14 +198,23 @@ Agora que já entendemos a estrutura básica do script python, vamos praticar co
     Desenvolva um Sensor de estacionamento veicular. A idéia é simples. Vamos utilizar 1 sensor de distância ultrassônico e 3 leds de cores difenciadas. Parte do problema já está resolvido você pode acessar o [tutorial](https://labprototipando.com.br/2020/06/22/como-configurar-o-sensor-de-distancia-hc-sr04-no-raspberry-pi/) adaptar o código do Sensor HC-SR04 e implementar a logica dos led.
 
 
+!!! progress
+    Continuar...
 
 
-Na proxima aula... Vamos desenvolver uma aplicação IoT
+## Enviando avisos para o celular por SMS
+
+![](Send-SMS-from-Raspberry-Pi-using-Python.png)
+
+!!! exercise
+    Altere o seu código do sensor de enstacionamento e implemente uma função que envia um SMS para numero do seu celular quando a distância do sensor ultrassonico estiver abaixo de 10cm. Para ajudar siga os passos deste tutorial: [send-sms-from-raspberry-pi-python](https://iot-guider.com/raspberrypi/send-sms-from-raspberry-pi-python/amp/)
+
+
+
 
 
 !!! progress
     Continuar...
-
 
 
 ## Montando um Webserver em Flask
