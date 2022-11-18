@@ -86,6 +86,7 @@ nav:
   - Agenda: programacao/agenda.md
   - Laboratórios:  
     - Aula1: aulas/lab1/index.md
-    - Aula2: aulas/lab2/index.md       
+    - Aula2: aulas/lab2/index.md
+    - Aula3: aulas/lab3/index.md       
   - Dicas: 
     - Dicas de projetos: aulas/Dicas/dicas-projetos.md

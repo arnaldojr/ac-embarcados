@@ -2,6 +2,15 @@
 
 Acredito que a melhor forma forma de aprender é fazendo. Para ajudar a despertar a curiosidade da uma olhada em alguns sites com projetos bacanas que podemos adaptar e desenvolver. Vale a pena explorar e boraaaa dominar o mundo!! 
 
+
+***Jetson Nano***
+- Links legais:
+    - [Esse é um dos maiores foruns que encontrei https://jetsonhacks.com/](https://jetsonhacks.com/)
+    - [https://all3dp.com/2/best-jetson-nano-projects/](https://all3dp.com/2/best-jetson-nano-projects/)
+    - [https://github.com/NVIDIA-AI-IOT/trt_pose](https://github.com/NVIDIA-AI-IOT/trt_pose)
+    - [https://www.seeedstudio.com/blog/2021/02/02/jetson-nano-machine-learning-projects-you-need-to-try/](https://www.seeedstudio.com/blog/2021/02/02/jetson-nano-machine-learning-projects-you-need-to-try/)
+
+
 ***Raspberry PY***
 
 - Links internacionais:
